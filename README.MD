@@ -1,5 +1,6 @@
 <h1 align="center"> PROJECT TITYOS</h1>
 <h1 align="center">(A RPG PROJECT FOR SCHOOL)</h1>
+<h1>INTERDICTION D'UTILISER LES CLASS, ENUMS ETC... DONC LE CODE EST DEGEULASSE</h1>
 
 ## CDC:
     - Main Perso: (Choisis ton pseudo)
