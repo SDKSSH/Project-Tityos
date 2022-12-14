@@ -1,0 +1,24 @@
+dg_1=Mère:-Bonjour,fils comment vas tu aujourd'hui ?
+dg_2=%name%:-Bonjour mère, je vais bien. Je dois partir, il faut sauver le diamant d'Artémis.
+dg_3=Mère:- Fais attention à toi. Je t'ai préparé ton equipement
+
+choix_1_n=Choisis ta classe !
+choix_1_o1=Mage
+choix_1_o2=Guerrier
+choix_1_o3=Archer
+
+mage_ch=Nouveau Item !!!\nSceptre défaillant
+guerrier_ch=Nouveau Item !!!\nÉpée Briser
+archer_ch=Nouveau Item !!!\nLance Pierre en bois de Sapin
+
+act_1=*Sort de chez lui*
+dg_4=???: Bonjour, %name% comment vas tu ? ça fait si longtemps 
+dg_5=%name%: Mais, qui etes vous ?
+dg_6=Dragon: Je m'appelle Dragon. Je suis ton ... Euh je suis un ami de ta mère. C'est fou comment t'a grandi.
+dg_7=%name%: Dragon... Ce nom me dit quelque chose
+dg_8=Dragon: Bref. Je suis là pour t'entraîner. Tityos est un adversaire sans égal, tu dois etre plus fort.Mon ami Gazo va t'aider aussi.
+dg_9=Gazo: Salu, tu voi ce ke je ve dir
+dg_10=Gazo: Moi, c Gazeau enchanté grrr paw
+dg_11=Gazo: Je vé t'entréné mème si g arété l'écol en 6èm, tu voi ce ke je ve dir
+dg_12=Dragon: Bonne chance %name% ! Sale bg, adieux
+dg_13=Gazo: Pèt pa lé roubignols Dragon ! Hop o comba %name%, tu voi ce ke je ve dir
