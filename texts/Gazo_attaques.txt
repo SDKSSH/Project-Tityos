@@ -1,0 +1,7 @@
+gazo_at1=Fuck le lyn
+gazo_at2=Becherel
+gazo_at3=Tu voi ce ke je ve dir
+gazo_at4=Grr paw
+
+gazo_dft=Juska ce ke je dye
+gazo_win=Zéro bleuf, je dégéne pous-toi, grr, paw
