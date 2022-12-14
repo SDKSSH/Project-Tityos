@@ -1,0 +1,1 @@
+attack_tmp=%s attaque ! Il utilise %s et te retire %s PV
