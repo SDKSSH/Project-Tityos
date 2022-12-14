@@ -1,0 +1,6 @@
+intro_1=Il était une fois à Héraklion en Crête, un jeune aventurier nommé %name% !\nSon rêve ? C'est de devenir comme ces héros favoris tel que SuperMan et IronMan !
+intro_2=Mais un jour ! Un évènement sacré changera sa vie à tous jamais !
+intro_3=En effet Tityos a volé le diamant sacré d'Artémis, un diamant concentrant tous les pouvoirs du monde !
+intro_4=Mais notre jeune héros se met à la quête de retrouver ce diamant et de tuer Tityos, c'est pour cela que notre jeune héros part pour un long voyage...
+intro_5=Le jour des 18 ans de %name%, il décide de partir à la recherche du diamant sacré !
+intro_6=À son réveil, %name% se trouve dans sa chambre, et entend la douce voix de sa mère .
