@@ -9,7 +9,7 @@ def loadTexts():
     '''
     global texts
     for f_name in os.listdir(os.getcwd()+"/texts/"):
-        with open(os.path.join(os.getcwd()+"/texts/", f_name), 'r') as f:
+        with open(os.path.join(os.getcwd()+"/texts/", f_name), 'r', encoding='utf-8') as f:
             for l in f.readlines():
                 if(l != None and l != "" and "=" in l):
                     texts[l.split("=")[0]] = l.split("=")[1].replace(r'\n', '\n')

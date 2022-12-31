@@ -1,25 +1,20 @@
 from random import randint
 from i18n.Texts import getText
-import multiprocessing
-from playsound import playsound
+from winsound import PlaySound, SND_FILENAME, SND_LOOP, SND_ASYNC,SND_ALIAS
 import models.Player as Player
+import os
 
 
 damage = 1
 attacks = ["gazo_at1", "gazo_at2", "gazo_at3", "gazo_at4"]
 health = 4
 inFight = False
-sound_thread = None
 
 def playGazoTheme():
-    global sound_thread
-    sound_thread = multiprocessing.Process(target=playsound, args=("sounds/gazo/gazoTheme.mp3",))
-    sound_thread.start()
-    
+    PlaySound(os.getcwd().replace("//", "/")+'/sounds/gazo/gazoTheme.wav', SND_LOOP|SND_ASYNC|SND_FILENAME)
+
 def stopGazoTheme():
-    global sound_thread
-    sound_thread.close()
-    sound_thread = None
+    PlaySound(None, SND_FILENAME)
 
 def attack() -> bool:
     '''

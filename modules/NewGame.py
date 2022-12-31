@@ -4,6 +4,7 @@ from i18n.Texts import getText
 import os as os
 import modules.ClassChooseModule as clmodule
 from pick import pick
+import characters.Gazo as Gazo
 def launch():
     os.system("clear")
     name = input("Quel est ton nom jeune homme ? ")
