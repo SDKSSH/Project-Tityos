@@ -13,7 +13,7 @@ sound_thread = None
 
 def playGazoTheme():
     global sound_thread
-    sound_thread = multiprocessing.Process(target=playsound, args=("file.mp3",))
+    sound_thread = multiprocessing.Process(target=playsound, args=("sounds/gazo/gazoTheme.mp3",))
     sound_thread.start()
     
 def stopGazoTheme():
