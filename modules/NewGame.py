@@ -28,5 +28,6 @@ def launch():
     sleep(1.5)
     print(getText("dg_3"))
     sleep(1.5)
+    input("Appuye sur entrer pour continuer")
     selected = pick([getText("choix_1_o1"), getText("choix_1_o2"), getText("choix_1_o3")], getText("choix_1_n"), indicator="=>")
     clmodule.launch(selected[0][1])

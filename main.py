@@ -7,5 +7,5 @@ if __name__ == "__main__":
 
     #STARTING SCREEN
     selected = pick(['Nouvelle partie', 'Charger une partie', 'Options'], "Bienvenu(e) sur Tityos !\n", indicator="=> ")
-    if selected[0][1] == "o":
+    if selected[0][1] == 0:
         ng.launch()
