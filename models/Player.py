@@ -5,6 +5,28 @@ armor = {}
 classe = {}
 name = ""
 exp = 0
+coins = 0
+
+def getCoins():
+    '''
+    Get les pièces du Joueur
+    '''
+    global coins
+    return coins
+
+def addCoins(n : int):
+    '''
+    Ajoute des pièces au Joueur
+    '''
+    global coins
+    coins = coins+n
+
+def removeCoin(n : int):
+    '''
+    Retire des pièces au Joueur
+    '''
+    global coins
+    coins = coins-n
 
 def getHealth():
     '''

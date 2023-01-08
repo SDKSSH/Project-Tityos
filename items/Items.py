@@ -1,6 +1,5 @@
 from typing import Optional
 
-
 epee_briser = {
     "id" : 0,
     "name" : "Épée Briser",
@@ -90,6 +89,19 @@ def getItemByID(id : int) -> Optional[dict]:
     {'id': 0, 'name': 'Épée Briser', 'damage': 1, 'sell': 0}
     '''
     f_dict = {k:v for k,v in globals().items() if isinstance(v, dict) and "id" in v and "damage" in v and v["id"] == id}
+    l = list(f_dict.values())
+    if(len(l) == 0):
+        return None
+    else:
+        return l[0]
+
+def getItemByName(name : str) -> Optional[dict]:
+    '''
+    Get an item by its Name
+    >>> getItemByName("Épée Briser")
+    {'id': 0, 'name': 'Épée Briser', 'damage': 1, 'sell': 0}
+    '''
+    f_dict = {k:v for k,v in globals().items() if isinstance(v, dict) and "id" in v and "damage" in v and v["name"] == name}
     l = list(f_dict.values())
     if(len(l) == 0):
         return None
