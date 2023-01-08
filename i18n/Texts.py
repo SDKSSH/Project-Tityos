@@ -32,4 +32,4 @@ def getText(key : str):
     Permet d'avoir le contenu d'une clé de mon dictionnaire texts et applique les variables
     '''
     global texts
-    return texts[key].replace("%name%", Player.getName()).replace("%hp%", Player.getHealth()).replace("%%classe%", Player.getClasse()["name"]).replace("%%exp%", Player.getExp()).replace("%%level%", Player.getLevel())
+    return texts[key].replace("%name%", Player.getName()).replace("%hp%", str(Player.getHealth())).replace("%%classe%", Player.getClasse()["name"]).replace("%%exp%", str(Player.getExp())).replace("%%level%", str(Player.getLevel()))

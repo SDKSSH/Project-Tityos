@@ -20,27 +20,26 @@ def spawnMarchand(cb):
         opt = [3,6,8]
     elif(Player.getClasse()["name"] == "Archer"):
         opt = [9,10, 11]
-    options, selected = pick([Items.getItemByID(x) for x in opt], "Que voulez-vous acheter ?", indicator="=>")
-    it = Items.getItemByName(options)
     sendPick(opt, cb)
 
 def sendPick(opt, cb):
     '''
     Envoie un pick avec les options
     '''
-    optt = [Items.getItemByID(x) for x in opt]
+    optt = [Items.getItemByID(x)["name"] for x in opt]
     optt.append("Quitter")
     options, selected = pick(optt, "Que voulez-vous acheter ?", indicator="=>")
     if(options == "Quitter"):
         cb()
     else:
         it = Items.getItemByName(options)
-        if(Player.getMoney() >= it["price"]):
+        if(Player.getCoins() >= it["price"]):
             Player.removeCoin(it["price"])
             Player.setWeapon(it)
             print("Vous avez acheté %s" % (it["name"]))
             sleep(1)
+            cb()
         else:
             print("Vous n'avez pas assez d'argent !")
             sleep(1)
-            sendPick(opt)
+            sendPick(opt,cb)

@@ -71,7 +71,12 @@ def getClasse():
     Get la classe du Joueur
     '''
     global classe
-    return classe
+    if("name" in classe):
+        return classe
+    else:
+        return {
+            "name" : "Aucune"
+        }
 
 def getName():
     '''
