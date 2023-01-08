@@ -27,5 +27,6 @@ def startFight(cb):
     combat.startCombat({
         "name" : "Gaz'eau fin gazo jsp",
         "health" : 3,
-        "attack" : attack
+        "attack" : attack,
+        "exp" : 10
     }, cb)

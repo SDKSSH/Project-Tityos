@@ -16,7 +16,7 @@ def startCombat(rival, callback):
         if(round%2 == 1):
             options, selected = pick(['Attaquer', 'Défendre', "Doigdrip l'ennemie"], "Vous attaquez "+rival["name"]+" ! Il lui reste "+str(rival["health"])+" HP !\nStats:\nHP: %s | Epée: %s" % (Player.getHealth(), Player.getWeapon()["name"]), indicator="=> ")
             if selected == 0:
-                rival["health"] = rival["health"]-Player.getWeapon()["damage"]
+                rival["health"] = rival["health"]-Player.getStrength()
                 print("Tu as attaquer %s, il lui reste %s HP" % (rival["name"], rival["health"]))
                 if(rival["health"] <= 0):
                     end = True
@@ -42,7 +42,9 @@ def startCombat(rival, callback):
             sleep(1.667)
         round = round+1
     if(Player.health > 0):
-        sleep(1)
+        Player.exp = Player.exp+rival["exp"]
+        print("Tu as gagné ce combat ! Tu remporte %s exp" % (rival["exp"]))
+        sleep(1.5)
         callback()
     else:
         print("GAME OVER !!!")
