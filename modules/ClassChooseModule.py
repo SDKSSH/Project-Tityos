@@ -7,7 +7,6 @@ from time import sleep
 import characters.Gazo as Gazo
 
 def launch(cl):
-    global lol
     '''
     Appelle le module pour le choix de classe
     '''

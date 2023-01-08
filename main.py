@@ -6,6 +6,6 @@ if __name__ == "__main__":
     cl.launch()
 
     #STARTING SCREEN
-    selected = pick(['Nouvelle partie', 'Charger une partie', 'Options'], "Bienvenu(e) sur Tityos !\n", indicator="=> ")
-    if selected[0][1] == 0:
+    options, selected = pick(['Nouvelle partie', 'Charger une partie'], "Bienvenu(e) sur Tityos !\n", indicator="=> ")
+    if selected == 0:
         ng.launch()

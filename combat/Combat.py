@@ -14,16 +14,16 @@ def startCombat(rival, callback):
     end = False
     while(end == False):
         if(round%2 == 1):
-            selected = pick(['Attaquer', 'Défendre', "Doigdrip l'ennemie"], "Vous attaquez "+rival["name"]+" ! Il lui reste "+str(rival["health"])+" HP !\nStats:\nHP: %s | Epée: %s" % (Player.getHealth(), Player.getWeapon()["name"]), indicator="=> ")
-            if selected[0][1] == 0:
+            options, selected = pick(['Attaquer', 'Défendre', "Doigdrip l'ennemie"], "Vous attaquez "+rival["name"]+" ! Il lui reste "+str(rival["health"])+" HP !\nStats:\nHP: %s | Epée: %s" % (Player.getHealth(), Player.getWeapon()["name"]), indicator="=> ")
+            if selected == 0:
                 rival["health"] = rival["health"]-Player.getWeapon()["damage"]
                 print("Tu as attaquer %s, il lui reste %s HP" % (rival["name"], rival["health"]))
                 if(rival["health"] <= 0):
                     end = True
-            if selected[0][1] == 1:
+            if selected == 1:
                 defense = True
                 print("Tu te défend face à %s !" % (rival["name"]))
-            if selected[0][1] == 2:
+            if selected == 2:
                 doigdrip.AfficherDoigby()
                 print("Get doigdriped ahahahaha !")
                 Player.health = Player.health-1
