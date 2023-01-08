@@ -3,10 +3,8 @@ from i18n.Texts import getText
 import models.Player as Player
 import combat.Combat as combat
 
-damage = 1
 attacks = ["gazo_at1", "gazo_at2", "gazo_at3"]
-health = 4
-inFight = False
+damage = 1
 
 def attack():
     '''
@@ -28,5 +26,6 @@ def startFight(cb):
         "name" : "Gaz'eau fin gazo jsp",
         "health" : 3,
         "attack" : attack,
-        "exp" : 10
+        "exp" : 10,
+        "coins" : 10
     }, cb)

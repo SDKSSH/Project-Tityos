@@ -43,7 +43,8 @@ def startCombat(rival, callback):
         round = round+1
     if(Player.health > 0):
         Player.exp = Player.exp+rival["exp"]
-        print("Tu as gagné ce combat ! Tu remporte %s exp" % (rival["exp"]))
+        Player.addCoins(rival["coins"])
+        print("Tu as gagné ce combat ! Tu remportes %s exp et %s coins" % (rival["exp"], rival["coins"]))
         sleep(1.5)
         callback()
     else:
