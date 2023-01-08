@@ -92,8 +92,7 @@ def setNewClasse(name):
     '''
     global classe
     classe = {
-        "name" : name,
-        "exp" : 0
+        "name" : name
     }
 
 def getLevel():
