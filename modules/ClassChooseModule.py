@@ -2,9 +2,12 @@ import models.Player as Player
 from i18n.Texts import getText
 import os
 import items.Items as Items
+import modules.AfterGazoCombatModule as agcm
 from time import sleep
+import characters.Gazo as Gazo
 
 def launch(cl):
+    global lol
     '''
     Appelle le module pour le choix de classe
     '''
@@ -22,3 +25,27 @@ def launch(cl):
         print(getText("archer_ch"))
         Player.setWeapon(Items.lance_pierre)
         Player.setNewClasse("Archer")
+    sleep(1)
+    print(getText('act_1'))    
+    sleep(1)
+    print(getText('dg_4'))
+    sleep(1)
+    print(getText('dg_5'))
+    sleep(1)
+    print(getText('dg_6'))
+    sleep(1)
+    print(getText('dg_7'))
+    sleep(1)
+    print(getText('dg_8'))
+    sleep(1)
+    print(getText('dg_9'))
+    sleep(1)
+    print(getText('dg_10'))
+    sleep(1)
+    print(getText('dg_11'))
+    sleep(1)
+    print(getText('dg_12'))
+    sleep(1)
+    print(getText('dg_13'))
+    input("Appuye sur Entrer pour commencer le combat")
+    Gazo.startFight(agcm.launch)
