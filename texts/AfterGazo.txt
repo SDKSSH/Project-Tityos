@@ -1,0 +1,5 @@
+aftgaz_dialo1:Gazo : Kof, kof, Tu ma batu komen sa ?\n%name% jauré ma revanch !
+aftgaz_dialo2:%name% : Je suis désolé, je voulais pas que ça ce finnise comme ça.
+aftgaz_dialo3:Gazo : Tkt bg, on se revera, fé ta rout !
+aftgaz_dialo4:%name% : Azy tchao !
+aftgaz_dialo5:Notre jeune héro se dirige vers une fôret mais y rencontre le Marchand

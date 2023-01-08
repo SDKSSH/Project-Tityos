@@ -1,5 +1,4 @@
 health = 10
-strength = 1
 inventory = []
 weapon = {}
 armor = {}
@@ -18,8 +17,11 @@ def getStrength():
     '''
     Get la force du Joueur
     '''
-    global strength
-    return strength
+    level = getLevel()
+    if(level == 0):
+        return 1
+    else:
+        return level+getWeapon()["damage"]
 
 def getInventory():
     '''
