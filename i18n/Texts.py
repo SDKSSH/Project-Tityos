@@ -6,6 +6,11 @@ texts = {}
 def loadTexts():
     '''
     Lis tous les fichiers dans le dossiers texts et les ranges dans le dictionnaire texts
+    Pour que le texte soit comptabiliser il doit être sur le format suivant :
+    
+    clé:text
+
+    On peut y mettre des variable tel que %name% qui affiche le nom du joueur
     '''
     global texts
     for f_name in os.listdir(os.getcwd()+"/texts/"):
@@ -24,7 +29,7 @@ def getTexts():
 
 def getText(key : str):
     '''
-    Permet d'avoir le contenu d'une clé de mon dictionnaire texts
+    Permet d'avoir le contenu d'une clé de mon dictionnaire texts et applique les variables
     '''
     global texts
-    return texts[key].replace("%name%", Player.getName())
+    return texts[key].replace("%name%", Player.getName()).replace("%hp%", Player.getHealth()).replace("%%classe%", Player.getClasse()["name"]).replace("%%exp%", Player.getExp()).replace("%%level%", Player.getLevel())

@@ -94,3 +94,13 @@ def setNewClasse(name):
         "exp" : 0
     }
 
+def getLevel():
+    '''
+    Donne le niveau du joueur
+    '''
+    global exp
+    level = 0
+    while(exp > 0):
+        exp = exp - (10 * level)
+        level = level + 1
+    return level
