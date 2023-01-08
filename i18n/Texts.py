@@ -8,7 +8,7 @@ def loadTexts():
     Lis tous les fichiers dans le dossiers texts et les ranges dans le dictionnaire texts
     Pour que le texte soit comptabiliser il doit être sur le format suivant :
     
-    clé:text
+    clé=text
 
     On peut y mettre des variable tel que %name% qui affiche le nom du joueur
     '''
