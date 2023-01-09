@@ -9,3 +9,5 @@ if __name__ == "__main__":
     options, selected = pick(['Nouvelle partie', 'Charger une partie'], "Bienvenu(e) sur Tityos !\n", indicator="=> ")
     if selected == 0:
         ng.launch()
+    else:
+        print("Les sauvegardes sont réservé lors de l'achat du jeu !\nMerci de votre compréhension !")
